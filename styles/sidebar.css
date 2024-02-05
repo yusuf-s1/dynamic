@@ -1,0 +1,39 @@
+.sidebar {
+  display: none;
+  flex-basis: 100%;
+  padding: 2rem 1rem;
+}
+.sidebar-buttons {
+  flex-basis: 25%;
+}
+.sidebar-buttons button {
+  background-color: inherit;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.sidebar-buttons button:hover {
+  background-color: rgba(172, 172, 172, 0.25);
+  border: none;
+  margin: 0.5rem 0;
+}
+.sidebar-options {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.sidebar-color-options button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #323232;
+  border-radius: 0.32rem;
+}
+@media screen and (min-width: 576px) {
+  .sidebar {
+    display: flex;
+    flex-basis: 30%;
+    gap: 1rem;
+  }
+}

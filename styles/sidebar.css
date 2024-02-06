@@ -1,11 +1,15 @@
+/*mobile sidebar*/
 .sidebar {
-  display: none;
-  flex-basis: 100%;
-  padding: 2rem 1rem;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
 }
 .sidebar-buttons {
-  flex-basis: 25%;
+  display: flex;
+  gap: 1rem;
+  margin-block-end: 1rem;
+  border-bottom: 1px solid #ddd;
 }
+
 .sidebar-buttons button {
   background-color: inherit;
   border: none;
@@ -14,15 +18,20 @@
   border-radius: 0.25rem;
   cursor: pointer;
 }
+.sidebar-color-options {
+  overflow-y: auto;
+}
+.sidebar-color-options button {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.25rem;
+}
 .sidebar-buttons button:hover {
   background-color: rgba(172, 172, 172, 0.25);
   border: none;
   margin: 0.5rem 0;
 }
-.sidebar-options {
-  flex-grow: 1;
-  overflow-y: auto;
-}
+
 .sidebar-color-options button {
   width: 40px;
   height: 40px;
@@ -30,10 +39,21 @@
   border: 1px solid #323232;
   border-radius: 0.32rem;
 }
+
 @media screen and (min-width: 576px) {
   .sidebar {
     display: flex;
     flex-basis: 30%;
     gap: 1rem;
+  }
+  .sidebar-buttons {
+    flex-basis: 25%;
+    flex-direction: column;
+    margin: 0;
+    border: none;
+    padding: 0;
+  }
+  .sidebar-options {
+    flex-grow: 1;
   }
 }

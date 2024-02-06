@@ -73,3 +73,7 @@ h6 {
 i {
   font-size: 1.25rem;
 }
+button {
+  background-color: inherit;
+  border: none;
+}

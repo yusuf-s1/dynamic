@@ -1,21 +1,38 @@
+/*desktop
+
 body {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}*/
+
+/*mobile*/
+body {
+  display: flex;
+  flex-direction: column-reverse;
 }
+
 main {
   background-color: lightblue;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-basis: 100%;
   transition: 0.3s;
+  flex-grow: 1;
 }
 main h1 {
   font-size: 5rem;
 }
 @media screen and (min-width: 576px) {
+  body {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+  }
   main {
-    flex-grow: 1;
+    padding-block-start: 196px;
+    justify-content: start;
   }
 }

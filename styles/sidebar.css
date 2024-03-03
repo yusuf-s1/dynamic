@@ -45,6 +45,7 @@
     display: flex;
     flex-basis: 30%;
     gap: 1rem;
+    padding-block: 2rem;
   }
   .sidebar-buttons {
     flex-basis: 25%;

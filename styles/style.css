@@ -1,16 +1,7 @@
-/*desktop
-
-body {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}*/
-
-/*mobile*/
 body {
   display: flex;
   flex-direction: column-reverse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main {
@@ -24,6 +15,13 @@ main {
 }
 main h1 {
   font-size: 5rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+main h2 {
+  font-size: 3rem;
+  font-weight: 400;
 }
 @media screen and (min-width: 576px) {
   body {
